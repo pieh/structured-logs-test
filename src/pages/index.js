@@ -9,8 +9,10 @@ import { rhythm } from "../utils/typography"
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
+    const siteTitle = `wat`
     const posts = data.allMarkdownRemark.edges
+
+    // const test = data.gawinu.gawga
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -50,12 +52,7 @@ class BlogIndex extends React.Component {
 export default BlogIndex
 
 export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
+  query T1 {
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
