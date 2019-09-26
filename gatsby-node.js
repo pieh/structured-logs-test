@@ -1,6 +1,15 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
+exports.sourceNodes = async ({ reporter }) => {
+  if (process.env.LONGER) {
+    const a = reporter.activityTimer(`simulate node sourcing`)
+    a.start()
+    await new Promise(resolve => setTimeout(resolve, 10000))
+    a.end()
+  }
+}
+
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
