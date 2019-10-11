@@ -8,7 +8,7 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
-    "gatsby": "^2.10.1-structured-logs.160",
+    "gatsby": "^2.10.1-structured-logs.161",
     "gatsby-image": "^2.2.10",
     "gatsby-plugin-feed": "^2.3.7",
     "gatsby-plugin-google-analytics": "^2.1.8",
