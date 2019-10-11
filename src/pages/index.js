@@ -6,8 +6,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
-import "wat"
-
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
